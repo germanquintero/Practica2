@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Punto3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Calcula La Nota Final de La Materia</string>
+    <string name="help">Ingrese Sus Notas a Continuación</string>
+    <string name="quices">Quices (15%)</string>
+    <string name="exp">Exposiciones (10%)</string>
+    <string name="lab">Laboratorios (40%)</string>
+    <string name="profinal">Proyecto Final (35%)</string>
+    <string name="defi">Su Nota Final es </string>
+    <string name="action_settings">Settings</string>
+</resources>

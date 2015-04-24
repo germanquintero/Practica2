@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="15dp"
+            android:textColor="#C95E3A"
+            android:layout_weight="1.8"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textSize="15dp"
+            android:inputType="textPersonName"
+            android:layout_weight="1"
+            android:id="@+id/eNombre"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:textSize="15dp"
+            android:textColor="#C95E3A"
+            android:layout_weight="1.8"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:textSize="15dp"
+            android:inputType="textEmailAddress"
+            android:layout_weight="1"
+            android:id="@+id/eCorreo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:textSize="15dp"
+            android:textColor="#C95E3A"
+            android:layout_weight="1.8"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:textSize="15dp"
+            android:inputType="phone"
+            android:layout_weight="1"
+            android:id="@+id/eTel"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexo"
+            android:textSize="15dp"
+            android:textColor="#C95E3A"
+            android:layout_weight="1.8"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dip"
+            >
+            <RadioButton android:id="@+id/rFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"
+
+                />
+            <RadioButton android:id="@+id/rMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pais"
+            android:textSize="15dp"
+            android:textColor="#C95E3A"
+            android:layout_weight="1.8"/>
+
+        <Spinner
+            android:id="@+id/SPais"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:entries="@array/country_arrays"
+            android:prompt="@string/country_prompt" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="0dip"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobbies"
+            android:textSize="15dp"
+            android:textColor="#C95E3A"
+            android:layout_weight="1.8"/>
+
+        <CheckBox
+            android:id="@+id/CMusica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musica"
+            />
+        <CheckBox
+            android:id="@+id/CCine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cine" />
+        <CheckBox
+            android:id="@+id/CJugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugar"
+            />
+        <CheckBox
+            android:id="@+id/CNadar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nadar" />
+
+    </LinearLayout>
+
+    <!-- <DatePicker
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/dpResult"/>
+ -->
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Nacimiento:"
+        android:textSize="10dp"
+        android:textColor="#C95E3A"
+        android:layout_weight="1.8"/>
+
+
+
+     <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dpFechanaci"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:id="@+id/boton"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textSize="15dp"
+            android:textColor="#ff060bc9"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:id="@+id/tNombre"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo: "
+            android:textSize="15dp"
+            android:textColor="#ff060bc9"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tCorreo"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Teléfono: "
+            android:textColor="#ff060bc9"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tTel"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Sexo: "
+            android:textColor="#ff060bc9"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tSexo"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Pais: "
+            android:textColor="#ff060bc9"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tPais"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Hobbies: "
+            android:textColor="#ff060bc9"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tHobbie1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tHobbie2"
+            android:layout_marginLeft="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tHobbie3"
+            android:layout_marginLeft="5dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tHobbie4"
+            android:layout_marginLeft="5dip"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Fecha Nacimiento: "
+            android:textColor="#ff060bc9"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tNaci"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

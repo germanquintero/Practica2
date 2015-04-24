@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Punto2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="ope1">Operando1</string>
+    <string name="ope2">Operando2</string>
+    <string name="pos">El resultado es Positivo</string>
+    <string name="neg">El resultado es Negativo</string>
+    <string name="title">Calculadora</string>
+    <string name="descri">Ingrese Los Operandos y Elija La OperaciÃ³n</string>
+    <string name="suma">Sumar</string>
+    <string name="resta">Restar</string>
+    <string name="multi">Multiplicar</string>
+    <string name="divi">Dividir</string>
+    <string name="action_settings">Settings</string>
+</resources>
