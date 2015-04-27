@@ -20,7 +20,12 @@
         </activity>
         <activity
             android:name=".About"
-            android:label="@string/title_activity_about" >
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.AppCompat.Dialog" >
+        </activity>
+        <activity
+            android:name=".ConfigurarNotas"
+            android:label="@string/title_activity_configurar_notas" >
         </activity>
     </application>
 

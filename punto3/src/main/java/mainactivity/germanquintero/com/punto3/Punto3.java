@@ -2,6 +2,7 @@ package mainactivity.germanquintero.com.punto3;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -44,6 +45,7 @@ public class Punto3 extends ActionBarActivity {
              t_nota = (TextView) findViewById(R.id.tDef);
              t_estado = (TextView) findViewById(R.id.tEstado);
              t_mensaje = (TextView) findViewById(R.id.tMensaje);
+
              t_mensaje.setVisibility(View.GONE);
              t_mensaje.setVisibility(View.INVISIBLE);
 
@@ -164,6 +166,22 @@ public class Punto3 extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent j =new Intent(this,ConfigurarNotas.class);
+            j.putExtra("pQuiz",15);
+            j.putExtra("pExp",10);
+            j.putExtra("pPra",40);
+            j.putExtra("pPro",35);
+            startActivity(j);
+
+
+            return true;
+        }
+
+        if (id == R.id.acercade) {
+            //lo que euiero que ejecute
+
+            Intent i =new Intent(this,About.class);
+            startActivity(i);
             return true;
         }
 
@@ -171,7 +189,12 @@ public class Punto3 extends ActionBarActivity {
     }
 
 
+public void acercade(View view){
 
+    Intent i =new Intent(this,About.class);
+    startActivity(i);
+
+}
     @Override
     protected void onStart() {
         Toast.makeText(this,"On Start", Toast.LENGTH_LONG).show();
