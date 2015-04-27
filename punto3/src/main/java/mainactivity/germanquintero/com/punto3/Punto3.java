@@ -32,6 +32,7 @@ public class Punto3 extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toast.makeText(this,"On Create", Toast.LENGTH_LONG).show();
 
         setContentView(R.layout.main_activity_notas);
 
@@ -147,7 +148,6 @@ public class Punto3 extends ActionBarActivity {
 
 
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -168,5 +168,43 @@ public class Punto3 extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+
+    @Override
+    protected void onStart() {
+        Toast.makeText(this,"On Start", Toast.LENGTH_LONG).show();
+        super.onStart();
+    }
+
+    @Override
+    protected void onPostResume() {
+        Toast.makeText(this,"On Resume", Toast.LENGTH_LONG).show();
+        super.onPostResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Toast.makeText(this,"On Destroy", Toast.LENGTH_LONG).show();
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        Toast.makeText(this,"On Pause", Toast.LENGTH_LONG).show();
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        Toast.makeText(this,"On Stop", Toast.LENGTH_LONG).show();
+        super.onStop();
+    }
+
+    @Override
+    protected void onRestart() {
+        Toast.makeText(this,"On Restart", Toast.LENGTH_LONG).show();
+        super.onRestart();
     }
 }
