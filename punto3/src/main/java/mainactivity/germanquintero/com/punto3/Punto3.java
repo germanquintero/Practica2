@@ -32,24 +32,28 @@ public class Punto3 extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity_notas);
-        e_Quices = (EditText) findViewById(R.id.eQuiz);
-        e_Exposiciones = (EditText) findViewById(R.id.eExp);
-        e_Laboratoio = (EditText) findViewById(R.id.eLaboratorio);
-        e_Profinal = (EditText) findViewById(R.id.eProfinal);
-        t_nota = (TextView) findViewById(R.id.tDef);
-        t_estado = (TextView) findViewById(R.id.tEstado);
-        t_mensaje= (TextView)findViewById(R.id.tMensaje);
-        t_mensaje.setVisibility(View.GONE);
-        t_mensaje.setVisibility(View.INVISIBLE);
 
-        b_calcular = (Button) findViewById(R.id.bNota);
-        b_calcular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                calcular();
-            }
-        });
+        setContentView(R.layout.main_activity_notas);
+
+
+             e_Quices = (EditText) findViewById(R.id.eQuiz);
+             e_Exposiciones = (EditText) findViewById(R.id.eExp);
+             e_Laboratoio = (EditText) findViewById(R.id.eLaboratorio);
+             e_Profinal = (EditText) findViewById(R.id.eProfinal);
+             t_nota = (TextView) findViewById(R.id.tDef);
+             t_estado = (TextView) findViewById(R.id.tEstado);
+             t_mensaje = (TextView) findViewById(R.id.tMensaje);
+             t_mensaje.setVisibility(View.GONE);
+             t_mensaje.setVisibility(View.INVISIBLE);
+
+             b_calcular = (Button) findViewById(R.id.bNota);
+             b_calcular.setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View v) {
+                     calcular();
+                 }
+             });
+
 
 
     }
@@ -88,9 +92,9 @@ public class Punto3 extends ActionBarActivity {
     private void estado() {
 
         if (definitiva >= 3)
-            t_estado.setText("Ganó la Materia");
+            t_estado.setText(getResources().getString(R.string.gano));
         else {
-            t_estado.setText("No Ganó la Materia");
+            t_estado.setText(getResources().getString(R.string.perdio));
         }
 
     }
@@ -98,8 +102,8 @@ public class Punto3 extends ActionBarActivity {
     public void mensaje1(){
 
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Faltan Datos");
-        alertDialog.setMessage("Introduzca Todas las Notas");
+        alertDialog.setTitle(getResources().getString(R.string.faltan));
+        alertDialog.setMessage(getResources().getString(R.string.input));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
@@ -114,8 +118,8 @@ public class Punto3 extends ActionBarActivity {
     public void mensaje2(){
 
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Notas Erróneas");
-        alertDialog.setMessage("Las Notas son Entre 0 y 5");
+        alertDialog.setTitle(getResources().getString(R.string.erroneas));
+        alertDialog.setMessage(getResources().getString(R.string.cerocinco));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
@@ -140,6 +144,8 @@ public class Punto3 extends ActionBarActivity {
 
 
     }
+
+
 
 
     @Override

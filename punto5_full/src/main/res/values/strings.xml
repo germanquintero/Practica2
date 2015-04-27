@@ -4,6 +4,25 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="nombre">Nombre:</string>
+    <string name="correo">Correo:</string>
+    <string name="telefono">Teléfono:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="mascu">Masculino</string>
+    <string name="feme">Femenino</string>
+    <string name="pais">País:</string>
+    <string name="hobbies">Hobbies:</string>
+    <string name="musica">Música</string>
+    <string name="cine">Cine</string>
+    <string name="jugar">Jugar</string>
+    <string name="nadar">Nadar</string>
+    <string name="fecha">Fecha Nacimiento</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="hnombre">Ingrese Nombre</string>
+    <string name="hcorreo">Ingrese Correo</string>
+    <string name="htelefono">Ingrese Teléfono</string>
+
 
     <string name="country_prompt">Choose a country</string>
 

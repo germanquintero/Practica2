@@ -46,7 +46,7 @@
                 <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Quices"
+                    android:hint="@string/quizes"
                     android:textSize="15dp"
                     android:inputType="numberDecimal"
                     android:layout_weight="1.5"
@@ -75,7 +75,7 @@
                 <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Exposiciones"
+                    android:hint="@string/expo"
                     android:textSize="15dp"
                     android:inputType="numberDecimal"
                     android:layout_weight="1.5"
@@ -104,7 +104,7 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Laboratoios"
+                        android:hint="@string/labo"
                         android:textSize="15dp"
                         android:inputType="numberDecimal"
                         android:layout_weight="1.5"
@@ -133,7 +133,7 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Proyecto Final"
+                        android:hint="@string/finalpro"
                         android:textSize="15dp"
                         android:inputType="numberDecimal"
                         android:layout_weight="1.5"
@@ -155,7 +155,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Calcular"
+        android:text="@string/cal"
         android:id="@+id/bNota"
         android:layout_gravity="center_horizontal"
         android:layout_marginRight="10dip"
@@ -166,7 +166,7 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Nuevo"
+            android:text="@string/reset"
             android:id="@+id/bNuevo"
             android:layout_gravity="center_horizontal"
             android:onClick="resetear" />

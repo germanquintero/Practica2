@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre"
+            android:text="@string/nombre"
             android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_weight="1.8"/>
@@ -23,7 +23,7 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre"
+            android:hint="@string/hnombre"
             android:textSize="15dp"
             android:inputType="textPersonName"
             android:layout_weight="1"
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Correo"
+            android:text="@string/correo"
             android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_weight="1.8"/>
@@ -46,7 +46,7 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo"
+            android:hint="@string/hcorreo"
             android:textSize="15dp"
             android:inputType="textEmailAddress"
             android:layout_weight="1"
@@ -60,7 +60,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Teléfono"
+            android:text="@string/telefono"
             android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_weight="1.8"/>
@@ -68,7 +68,7 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Teléfono"
+            android:hint="@string/htelefono"
             android:textSize="15dp"
             android:inputType="phone"
             android:layout_weight="1"
@@ -86,7 +86,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Sexo"
+            android:text="@string/sexo"
             android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_weight="1.8"/>
@@ -100,13 +100,13 @@
             <RadioButton android:id="@+id/rFemenino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Femenino"
+                android:text="@string/feme"
 
                 />
             <RadioButton android:id="@+id/rMasculino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masculino"
+                android:text="@string/mascu"
 
                 />
         </RadioGroup>
@@ -124,7 +124,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Pais"
+            android:text="@string/pais"
             android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_weight="1.8"/>
@@ -151,7 +151,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hobbies"
+            android:text="@string/hobbies"
             android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_weight="1.8"/>
@@ -160,24 +160,24 @@
             android:id="@+id/CMusica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Musica"
+            android:text="@string/musica"
             />
         <CheckBox
             android:id="@+id/CCine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cine" />
+            android:text="@string/cine" />
         <CheckBox
             android:id="@+id/CJugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jugar"
+            android:text="@string/jugar"
             />
         <CheckBox
             android:id="@+id/CNadar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nadar" />
+            android:text="@string/nadar" />
 
     </LinearLayout>
 
@@ -191,23 +191,24 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Fecha Nacimiento:"
+        android:text="@string/fecha"
         android:textSize="10dp"
         android:textColor="#C95E3A"
         android:layout_weight="1.8"/>
 
-
-
-     <DatePicker
+    <DatePicker
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/dpFechanaci"/>
+                android:id="@+id/dpFechanaci"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
+         />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar"
+        android:text="@string/aceptar"
         android:layout_gravity="center"
         android:textSize="15dp"
         android:id="@+id/boton"
@@ -222,7 +223,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre: "
+            android:text="@string/nombre"
             android:textSize="15dp"
             android:textColor="#ff060bc9"
             />
@@ -246,7 +247,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correo: "
+            android:text="@string/correo"
             android:textSize="15dp"
             android:textColor="#ff060bc9"
             />
@@ -273,7 +274,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:text="Teléfono: "
+            android:text="@string/telefono"
             android:textColor="#ff060bc9"
             />
 
@@ -296,7 +297,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:text="Sexo: "
+            android:text="@string/sexo"
             android:textColor="#ff060bc9"
             />
 
@@ -318,7 +319,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:text="Pais: "
+            android:text="@string/pais"
             android:textColor="#ff060bc9"
             />
 
@@ -341,7 +342,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:text="Hobbies: "
+            android:text="@string/hobbies"
             android:textColor="#ff060bc9"
 
             />
@@ -383,7 +384,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:text="Fecha Nacimiento: "
+            android:text="@string/fecha"
             android:textColor="#ff060bc9"
             />
 

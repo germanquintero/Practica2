@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Punto3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Calcular a classificação final</string>
+    <string name="help">Insira suas notas</string>
+    <string name="quices">Testes (15%)</string>
+    <string name="exp">Exposições(10%)</string>
+    <string name="lab">Laboratórios(40%)</string>
+    <string name="profinal">Projeto Final (35%)</string>
+    <string name="defi">Sua nota final é: </string>
+    <string name="action_settings">Settings</string>
+
+    <string name="quizes"> Testes </string>
+    <string name="expo"> Exposições </string>
+    <string name="labo"> Laboratories </string>
+    <string name="finalpro">Projeto Final </string>
+    <string name="cal"> Calcular </string>
+    <string name="reset"> Novo </string>
+
+
+    <string name="gano"> win stuff </string>
+    <string name="perdio"> Perdeu importa  </string>
+    <string name="faltan"> dados ausentes </string>
+    <string name="input"> Insira suas notas </string>
+    <string name="erroneas"> dados incorretos </string>
+    <string name="cerocinco"> As notas são entre zero e cinco </string>
+
+
+
+</resources>

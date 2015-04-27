@@ -63,17 +63,17 @@ public class Punto5_full extends ActionBarActivity {
                 tTel.setText(eTelefono.getText());
 
                  if (rmas.isChecked()){
-                     tSexo.setText("Masculino");
+                     tSexo.setText(getResources().getString(R.string.mascu));
                  }
 
                 if (rfem.isChecked()){
-                    tSexo.setText("Femenino");
+                    tSexo.setText(getResources().getString(R.string.feme));
                 }
 
                 tPai.setText(SCountry.getSelectedItem().toString());
 
                 if(CHoby1.isChecked()){
-                    tH1.setText("Musica");
+                    tH1.setText(getResources().getString(R.string.musica));
 
                 } else if (!CHoby1.isChecked()){
                     tH1.setText("");
@@ -81,7 +81,7 @@ public class Punto5_full extends ActionBarActivity {
                 }
 
                 if(CHoby2.isChecked()){
-                    tH2.setText("Cine");
+                    tH2.setText(getResources().getString(R.string.cine));
 
                 } else if (!CHoby2.isChecked()){
                     tH2.setText("");
@@ -89,7 +89,7 @@ public class Punto5_full extends ActionBarActivity {
                 }
 
                 if(CHoby3.isChecked()){
-                    tH3.setText("Jugar");
+                    tH3.setText(getResources().getString(R.string.jugar));
 
                 } else if (!CHoby3.isChecked()){
                     tH3.setText("");
@@ -97,7 +97,7 @@ public class Punto5_full extends ActionBarActivity {
                 }
 
                 if(CHoby4.isChecked()){
-                    tH4.setText("Nadar");
+                    tH4.setText(getResources().getString(R.string.nadar));
 
                 }else if (!CHoby4.isChecked()){
                     tH4.setText("");
@@ -105,7 +105,7 @@ public class Punto5_full extends ActionBarActivity {
                 }
 
 
-                tfecha.setText(dpnaci.getDayOfMonth()+"-"+dpnaci.getMonth()+"-"+dpnaci.getYear());
+                tfecha.setText(dpnaci.getDayOfMonth()+"-"+(dpnaci.getMonth()+1)+"-"+dpnaci.getYear());
 
 
             }

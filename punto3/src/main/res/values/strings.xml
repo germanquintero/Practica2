@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Punto3</string>
+    <string name="app_name">Calucladora Notas</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="title">Calcula La Nota Final de La Materia</string>
@@ -9,5 +9,21 @@
     <string name="lab">Laboratorios (40%)</string>
     <string name="profinal">Proyecto Final (35%)</string>
     <string name="defi">Su Nota Final es </string>
+
+    <string name="quizes">Quices </string>
+    <string name="expo"> Exposiciones </string>
+    <string name="labo"> Laboratorios </string>
+    <string name="finalpro">Proyecto Final </string>
+    <string name="cal">Calcular </string>
+    <string name="reset"> Nuevo </string>
+
+    <string name="gano"> Ganó la Materia </string>
+    <string name="perdio"> Perdio la Materia </string>
+    <string name="faltan"> Faltan Datos </string>
+    <string name="input"> Introduzca todas las notas </string>
+    <string name="erroneas"> Notas Erróneas </string>
+    <string name="cerocinco"> Las Notas son entre cero y 5 </string>
+
+
     <string name="action_settings">Settings</string>
 </resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:focusable="false"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descri"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ope1"
+            android:textSize="20dp"
+            android:textColor="#ffff0a16"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ope1"
+            android:textSize="20dp"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/eOpe1"/>
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ope2"
+            android:textSize="20dp"
+            android:textColor="#ffff0a16"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:layout_marginLeft="100dp"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ope2"
+            android:textSize="20dp"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/eOpe2"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/res"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:id="@+id/eRes"
+            android:gravity="center_horizontal"
+            android:inputType="numberSigned|numberDecimal"
+            />
+
+    </LinearLayout>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        android:id="@+id/bSumar"
+        android:layout_gravity="center_horizontal" />
+        -->
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        >
+        <RadioButton android:id="@+id/rsumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suma"
+            android:onClick="operar"/>
+        <RadioButton android:id="@+id/rrestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resta"
+            android:onClick="operar"/>
+        <RadioButton android:id="@+id/rmulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multi"
+            android:onClick="operar"/>
+        <RadioButton android:id="@+id/rdivi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divi"
+            android:onClick="operar"/>
+    </RadioGroup>
+
+    <!-- Para poner el tipo de numero-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffff0a16"
+        android:textStyle="italic"
+        android:text="@string/tipo"
+        android:id="@+id/tTipo"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:id="@+id/bReset"
+        android:layout_gravity="center_horizontal"
+        android:onClick="resetear"/>
+
+
+</LinearLayout>

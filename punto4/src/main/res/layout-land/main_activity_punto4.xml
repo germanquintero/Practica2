@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:layout_weight="1"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ff0a21ff"
+
+
+        />
+
+
+    <TextView
+        style="@style/textViewStyle"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:textColor="#ff30ff18"
+        android:text="@string/input"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            style="@style/textViewStyle"
+            android:text="@string/base"
+
+            />
+        <EditText
+
+            style="@style/EditTextStyle"
+            android:hint="@string/ibase"
+            android:id="@+id/eBase"
+
+
+            />
+
+        <TextView
+
+            style="@style/textViewStyle"
+            android:text="@string/altura"
+            android:layout_marginLeft="100dp"
+
+
+            />
+        <EditText
+            style="@style/EditTextStyle"
+            android:hint="@string/ialtura"
+            android:id="@+id/eAltura"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+
+        android:gravity="center_horizontal">
+
+
+        <TextView
+
+            style="@style/textViewStyle"
+            android:text="@string/radio"
+
+            />
+        <EditText
+            style="@style/EditTextStyle"
+            android:hint="@string/iradio"
+            android:id="@+id/eRadio"
+
+            />
+
+        <TextView
+
+            style="@style/textViewStyle"
+            android:text="@string/lado"
+            android:layout_marginLeft="100dp"
+
+
+            />
+        <EditText
+            style="@style/EditTextStyle"
+            android:hint="@string/ilado"
+            android:id="@+id/eLado"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        >
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <RadioButton android:id="@+id/rCuadrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cuadrado"
+                android:onClick="operar"
+
+                />
+
+            <RadioButton android:id="@+id/rTriangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/triangulo"
+                android:onClick="operar"
+
+
+                />
+
+
+            <RadioButton android:id="@+id/rRectangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rectangulo"
+                android:onClick="operar" />
+
+            <RadioButton android:id="@+id/rCirculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/circulo"
+                android:onClick="operar"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        >
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:id="@+id/bArea"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nuevo"
+            android:id="@+id/bReset"
+            android:layout_gravity="center_horizontal"
+            android:onClick="resetear"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+
+
+        style="@style/textViewStyle"
+
+        android:text="@string/res"
+        android:id="@+id/tMensaje"
+        android:textSize="30dp"
+        android:textColor="#ff0fff13"
+        android:layout_weight="1"
+
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+
+        <TextView
+            style="@style/textViewStyle"
+            android:textSize="30dp"
+            android:textColor="#ff0a3aff"
+            android:layout_weight="1"
+            android:id="@+id/tArea"
+            android:layout_gravity="center_horizontal"
+
+
+
+            />
+
+
+        <TextView
+            style="@style/textViewStyle"
+            android:textSize="30dp"
+            android:textColor="#ff0a3aff"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="  cm²"
+            android:id="@+id/tAcm2"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

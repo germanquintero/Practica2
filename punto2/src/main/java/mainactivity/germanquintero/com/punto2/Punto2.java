@@ -24,8 +24,8 @@ public class Punto2 extends ActionBarActivity {
 
     private EditText eOpe11;
     private EditText eOpe22;
-    private EditText eRes;
-    private TextView tTipo;
+
+    private TextView tTipo, eRes;
     //private Button bReset=(Button)findViewById(R.id.bReset);
     private RadioButton rSumar;
     private RadioButton rRestar;
@@ -45,7 +45,7 @@ public class Punto2 extends ActionBarActivity {
 
         eOpe11=(EditText)findViewById(R.id.eOpe1);
         eOpe22=(EditText)findViewById(R.id.eOpe2);
-        eRes=(EditText)findViewById(R.id.eRes);
+        eRes=(TextView)findViewById(R.id.eRes);
         tTipo=(TextView)findViewById(R.id.tTipo);
         //private Button bReset=(Button)findViewById(R.id.bReset);
         rSumar=(RadioButton)findViewById(R.id.rsumar);
@@ -101,8 +101,8 @@ public class Punto2 extends ActionBarActivity {
     public void mensaje(){
 
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Faltan Datos");
-        alertDialog.setMessage("Es necesario Llenar los Campos");
+        alertDialog.setTitle(getResources().getString(R.string.faltan));
+        alertDialog.setMessage(getResources().getString(R.string.llenar));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
@@ -212,16 +212,16 @@ public class Punto2 extends ActionBarActivity {
 
     public void tipo(){
         if (res>0) {
-            tTipo.setText("Es Positivo");
+            tTipo.setText(getResources().getString(R.string.pos));
         }else if (res<0)
         {
-            tTipo.setText("Es negativo");
+            tTipo.setText(getResources().getString(R.string.neg));
         }
         else if (res==0){
-            tTipo.setText("Es Cero");
+            tTipo.setText(getResources().getString(R.string.cero));
         }
         else {
-            tTipo.setText("Indeterminado o No Existe");
+            tTipo.setText(getResources().getString(R.string.inf));
         }
     }
 

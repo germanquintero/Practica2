@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ff0a21ff"
+        />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/help"
+        android:textSize="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffff850c"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quices"
+            android:textSize="15dp"
+            android:textColor="#ffff0a16"
+            android:layout_weight="1.8"
+            android:textStyle="italic"
+            />
+        <EditText
+            style="@style/EditTextStyle"
+            android:hint="@string/quizes"
+            android:layout_weight="1.5"
+            android:id="@+id/eQuiz"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exp"
+            android:textSize="15dp"
+            android:textColor="#ffff0a16"
+            android:layout_weight="1.8"
+            android:textStyle="italic"
+            />
+        <EditText
+
+            style="@style/EditTextStyle"
+            android:hint="@string/expo"
+            android:layout_weight="1.5"
+            android:id="@+id/eExp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lab"
+            android:textSize="15dp"
+            android:textColor="#ffff0a16"
+            android:layout_weight="1.8"
+            android:textStyle="italic"
+            />
+        <EditText
+            style="@style/EditTextStyle"
+            android:hint="@string/labo"
+            android:layout_weight="1.5"
+            android:id="@+id/eLaboratorio"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profinal"
+            android:textSize="15dp"
+            android:textColor="#ffff0a16"
+            android:layout_weight="1.8"
+            android:textStyle="italic"
+            />
+        <EditText
+            style="@style/EditTextStyle"
+            android:hint="@string/finalpro"
+            android:layout_weight="1.5"
+            android:id="@+id/eProfinal"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cal"
+            android:id="@+id/bNota"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="0dip"
+
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:id="@+id/bNuevo"
+            android:layout_gravity="center_horizontal"
+            android:onClick="resetear" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defi"
+        android:id="@+id/tMensaje"
+        android:textSize="20dp"
+        android:textColor="#ff0fff13"
+        android:layout_weight="0.5"
+        android:textStyle="italic"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="#ff0a3aff"
+        android:layout_weight="1"
+        android:textStyle="italic"
+        android:id="@+id/tDef"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#ff0a3aff"
+        android:layout_weight="1.8"
+        android:textStyle="italic"
+        android:id="@+id/tEstado"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+</LinearLayout>

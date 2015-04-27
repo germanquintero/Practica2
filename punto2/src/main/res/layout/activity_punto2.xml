@@ -49,7 +49,7 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Input Ope1"
+            android:hint="@string/ope1"
             android:textSize="20dp"
             android:inputType="numberSigned|numberDecimal"
             android:layout_weight="0.7"
@@ -76,7 +76,7 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Input Ope2"
+            android:hint="@string/ope2"
             android:textSize="20dp"
             android:inputType="numberSigned|numberDecimal"
             android:layout_weight="0.7"
@@ -91,7 +91,7 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Resultado"
+            android:hint="@string/res"
             android:textSize="20dp"
             android:layout_weight="0.7"
             android:id="@+id/eRes"
@@ -146,7 +146,7 @@
         android:textSize="20dp"
         android:textColor="#ffff0a16"
         android:textStyle="italic"
-        android:hint="Post o Nega"
+        android:text="@string/tipo"
         android:id="@+id/tTipo"
         android:layout_gravity="center_horizontal"
         />
@@ -154,7 +154,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resetear"
+        android:text="@string/reset"
         android:id="@+id/bReset"
         android:layout_gravity="center_horizontal"
         android:onClick="resetear"/>

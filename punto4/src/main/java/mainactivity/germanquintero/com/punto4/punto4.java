@@ -139,7 +139,7 @@ public class punto4 extends ActionBarActivity {
         if (flag_cuadrado==1)
         {
             flag_cuadrado=0;
-            Toast.makeText(this, "Cuadrado", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getResources().getString(R.string.cuadrado), Toast.LENGTH_LONG).show();
             String lado= e_Lado.getText().toString();
 
             if (TextUtils.isEmpty(lado)){
@@ -161,7 +161,7 @@ public class punto4 extends ActionBarActivity {
 
         }
         else if  (flag_rect==1){
-            Toast.makeText(this, "Rectangulo", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getResources().getString(R.string.rectangulo), Toast.LENGTH_LONG).show();
             flag_rect=0;
 
             String altura= e_Altura.getText().toString();
@@ -188,7 +188,7 @@ public class punto4 extends ActionBarActivity {
 
         }
         else if (flag_tria==1){
-            Toast.makeText(this, "Triángulo", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,getResources().getString(R.string.triangulo), Toast.LENGTH_LONG).show();
             flag_tria=0;
 
             String altura= e_Altura.getText().toString();
@@ -213,7 +213,7 @@ public class punto4 extends ActionBarActivity {
         }
 
         else if (flag_cir==1){
-            Toast.makeText(this, "Circulo", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getResources().getString(R.string.circulo), Toast.LENGTH_LONG).show();
             flag_cir=0;
 
             String radio= e_Radio.getText().toString();
@@ -239,8 +239,8 @@ public class punto4 extends ActionBarActivity {
     }
     public void mensaje1(){
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Faltan Datos");
-        alertDialog.setMessage("Introduzca el Lado de Cuadrado");
+        alertDialog.setTitle(getResources().getString(R.string.fatan));
+        alertDialog.setMessage(getResources().getString(R.string.basaltura));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
@@ -259,8 +259,8 @@ public class punto4 extends ActionBarActivity {
 
     public void mensaje2(){
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Faltan Datos");
-        alertDialog.setMessage("Debe Introducir la Base y la Altura");
+        alertDialog.setTitle(getResources().getString(R.string.fatan));
+        alertDialog.setMessage(getResources().getString(R.string.basaltura));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
@@ -279,8 +279,8 @@ public class punto4 extends ActionBarActivity {
 
     public void mensaje3(){
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Faltan Datos");
-        alertDialog.setMessage("Debe Introducir El Radio");
+        alertDialog.setTitle(getResources().getString(R.string.fatan));
+        alertDialog.setMessage(getResources().getString(R.string.faltaradio));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions

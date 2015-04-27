@@ -5,4 +5,32 @@
         <!-- Customize your theme here. -->
     </style>
 
+
+    <style name="textViewStyle"
+        parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#ffff1125</item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+
+    <style name="EditTextStyle"
+        parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#ffff1125</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:inputType">numberDecimal</item>
+
+
+    </style>
+
+
+
+
+
 </resources>

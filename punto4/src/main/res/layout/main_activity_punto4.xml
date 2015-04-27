@@ -4,81 +4,74 @@
     android:layout_height="match_parent"
     android:layout_marginTop="50dp"
     android:focusable="false"
+    android:layout_weight="1"
     >
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Calculadora Área de Figuras"
+        android:text="@string/titulo"
         android:textSize="25dp"
         android:gravity="center_horizontal"
         android:textColor="#ff0a21ff"
+        android:layout_weight="1"
 
         />
 
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Ingrese Todos los Datos y luego elia la Figura"
+                style="@style/textViewStyle"
                 android:textSize="15dp"
-                android:gravity="center_horizontal"
+                android:layout_gravity="center"
                 android:textColor="#ff30ff18"
+                android:text="@string/input"
 
                 />
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:layout_marginTop="20dp"
+
+                android:orientation="horizontal"
                 >
 
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Base"
-                    android:textSize="20dp"
-                    android:textColor="#ffff1125"
-                    android:layout_weight="0.2"
-                    android:textStyle="italic"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dip"
+
+                    style="@style/textViewStyle"
+                    android:text="@string/base"
+
+
+
                     />
                 <EditText
-                    android:layout_width="110dp"
-                    android:layout_height="wrap_content"
-                    android:hint="Base"
-                    android:textSize="20dp"
+
+                    style="@style/EditTextStyle"
+                    android:hint="@string/ibase"
                     android:id="@+id/eBase"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="10dp"
+
+
 
                     />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Altura"
-                    android:textSize="20dp"
-                    android:textColor="#ffef0927"
-                    android:layout_weight="1.22"
-                    android:textStyle="italic"
-                    android:layout_gravity="center_horizontal"
+
+                    style="@style/textViewStyle"
+                    android:text="@string/altura"
+                    android:layout_marginLeft="50dp"
 
 
                     />
                 <EditText
-                    android:layout_width="111dp"
-                    android:layout_height="wrap_content"
-                    android:hint="Altura"
-                    android:textSize="20dp"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/ialtura"
                     android:id="@+id/eAltura"
-                    android:gravity="center_horizontal"
-                    android:inputType="numberDecimal"
-                    android:layout_weight="2.63" />
+
+                     />
 
 
             </LinearLayout>
@@ -86,57 +79,42 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
         >
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Radio"
-            android:textSize="20dp"
-            android:textColor="#ffff1125"
-            android:layout_weight="0.2"
-            android:textStyle="italic"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="20dip"
-            />
-        <EditText
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:hint="Radio"
-            android:textSize="20dp"
-            android:id="@+id/eRadio"
-            android:gravity="center_horizontal"
-            android:inputType="numberDecimal"
+                        <TextView
 
-            />
+                            style="@style/textViewStyle"
+                            android:text="@string/radio"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lado"
-            android:textSize="20dp"
-            android:textColor="#ffef0927"
-            android:layout_weight="1.22"
-            android:textStyle="italic"
-            android:layout_gravity="center_horizontal"
+                            />
+                        <EditText
+                            style="@style/EditTextStyle"
+                            android:hint="@string/iradio"
+                            android:id="@+id/eRadio"
+
+                            />
+
+                        <TextView
+
+                            style="@style/textViewStyle"
+                            android:text="@string/lado"
+                            android:layout_marginLeft="50dp"
 
 
-            />
-        <EditText
-            android:layout_width="111dp"
-            android:layout_height="wrap_content"
-            android:hint="Lado"
-            android:textSize="20dp"
-            android:id="@+id/eLado"
-            android:gravity="center_horizontal"
-            android:inputType="numberDecimal"
-            android:layout_weight="2.63" />
+
+                            />
+                        <EditText
+                            style="@style/EditTextStyle"
+                            android:hint="@string/ilado"
+                            android:id="@+id/eLado"
+
+                            />
 
 
     </LinearLayout>
@@ -149,6 +127,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
+        android:layout_weight="1"
         >
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -159,7 +138,7 @@
                     <RadioButton android:id="@+id/rCuadrado"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cuadrado"
+                        android:text="@string/cuadrado"
                         android:onClick="operar"
 
 
@@ -168,7 +147,7 @@
                         <RadioButton android:id="@+id/rTriangulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Triángulo"
+                        android:text="@string/triangulo"
                         android:onClick="operar"
 
 
@@ -178,13 +157,13 @@
                     <RadioButton android:id="@+id/rRectangulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rectángulo"
+                        android:text="@string/rectangulo"
                         android:onClick="operar" />
 
                         <RadioButton android:id="@+id/rCirculo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Círculo"
+                            android:text="@string/circulo"
                             android:onClick="operar"
                            />
 
@@ -202,23 +181,25 @@
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
+        android:layout_weight="1"
         >
 
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Calcular Ärea"
+            android:text="@string/calcular"
             android:id="@+id/bArea"
             android:layout_gravity="center_horizontal"
-            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+
 
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resetear"
+            android:text="@string/nuevo"
             android:id="@+id/bReset"
             android:layout_gravity="center_horizontal"
             android:onClick="resetear"/>
@@ -228,14 +209,16 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="El área es:"
+
+
+        style="@style/textViewStyle"
+
+        android:text="@string/res"
         android:id="@+id/tMensaje"
         android:textSize="30dp"
         android:textColor="#ff0fff13"
+        android:layout_weight="1"
 
-        android:textStyle="italic"
         android:layout_gravity="center_horizontal"
         />
 
@@ -250,12 +233,10 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
         android:textSize="30dp"
         android:textColor="#ff0a3aff"
         android:layout_weight="1"
-        android:textStyle="italic"
         android:id="@+id/tArea"
         android:layout_gravity="center_horizontal"
 
@@ -265,12 +246,10 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/textViewStyle"
             android:textSize="30dp"
             android:textColor="#ff0a3aff"
             android:layout_weight="1"
-            android:textStyle="italic"
             android:layout_gravity="center_horizontal"
             android:text="  cm²"
             android:id="@+id/tAcm2"
