@@ -192,7 +192,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/fecha"
-        android:textSize="10dp"
+        android:textSize="15dp"
         android:textColor="#C95E3A"
         android:layout_weight="1.8"/>
 

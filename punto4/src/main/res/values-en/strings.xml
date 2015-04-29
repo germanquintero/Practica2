@@ -2,29 +2,29 @@
     <string name="app_name">Punto4</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="titulo">Calculadora de Área de Figuras</string>
-    <string name="input">Ingrese Todos los Datos y luego elia la Figura</string>
+    <string name="titulo">Figure Calculator</string>
+    <string name="input">Enter All datas and Choose the figure</string>
     <string name="base">Base</string>
-    <string name="lado">Lado</string>
-    <string name="altura">Altura</string>
+    <string name="Side">Side</string>
+    <string name="altura">Height</string>
     <string name="radio">Radio</string>
     <string name="ibase">Base?</string>
-    <string name="ilado">Lado?</string>
-    <string name="ialtura">Altura?</string>
+    <string name="ilado">Side?</string>
+    <string name="ialtura">Height?</string>
     <string name="iradio">Radio?</string>
-    <string name="cuadrado">Cuadrado</string>
-    <string name="triangulo">Triángulo</string>
-    <string name="rectangulo">Rectángulo</string>
-    <string name="circulo">Círculo</string>
-    <string name="calcular">Calcular Área</string>
-    <string name="nuevo">Nuevo Cálculo</string>
-    <string name="res">El Área es:</string>
+    <string name="cuadrado">Square</string>
+    <string name="triangulo">Triangle</string>
+    <string name="rectangulo">Rectangle</string>
+    <string name="circulo">Circle</string>
+    <string name="calcular">Calculate</string>
+    <string name="nuevo">New</string>
+    <string name="res">The area is:</string>
 
     //java
-    <string name="fatan">Faltan Datos</string>
-    <string name="inputlado">Introudzca el lado del Cuadrado</string>
-    <string name="basaltura">Introduzca la Base y la altura</string>
-    <string name="faltaradio">Debe Introducir el Radio</string>
+    <string name="fatan">Missing Data</string>
+    <string name="inputlado">Enter the side of the Square</string>
+    <string name="basaltura">Input the base and Height</string>
+    <string name="faltaradio">Input the Radio</string>
 
 
 

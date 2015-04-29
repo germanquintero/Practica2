@@ -6,24 +6,24 @@
     <string name="ope2">Operando2</string>
     <string name="res">Resultado</string>
     <string name="tipo">Positivo o Negativo</string>
-    <string name="reset">Nuevo</string>
+    <string name="reset">Novo</string>
 
     //los de java
-    <string name="faltan">Faltan Datos</string>
-    <string name="llenar">Es Necesario Llenar Todos Los Campos</string>
-    <string name="cero">El resultado es Cero</string>
-    <string name="inf">Indeterminado</string>
+    <string name="faltan">Dados Ausentess</string>
+    <string name="llenar">Você deve preencher todos os campos</string>
+    <string name="cero">O resultado é zero</string>
+    <string name="inf">Inf</string>
 
 
 
 
-    <string name="pos">El resultado es Positivo</string>
-    <string name="neg">El resultado es Negativo</string>
+    <string name="pos">O resultado é positivo</string>
+    <string name="neg">O resultado é negativo</string>
 
     <string name="title">Calculadora</string>
-    <string name="descri">Ingrese Los Operandos y Elija La Operación</string>
-    <string name="suma">Sumar</string>
-    <string name="resta">Restar</string>
+    <string name="descri">Selecione Enter Os operandos e Operação</string>
+    <string name="suma">Adicionar</string>
+    <string name="resta">Subtrair</string>
     <string name="multi">Multiplicar</string>
     <string name="divi">Dividir</string>
     <string name="action_settings">Settings</string>

@@ -18,6 +18,7 @@ import android.app.Activity;
 import android.widget.Toast;
 import android.app.AlertDialog;
 
+import java.text.DecimalFormat;
 
 
 public class punto4 extends ActionBarActivity {
@@ -30,6 +31,8 @@ public class punto4 extends ActionBarActivity {
 
     String input_base, input_altura, input_radio, input_lado;
     float area_cuarado=0, area_rectangulo=00, area_trianglo=0, area_circulo=0;
+
+    DecimalFormat df = new DecimalFormat("#.##");
     @Override
 
 
@@ -50,13 +53,7 @@ public class punto4 extends ActionBarActivity {
         t_Mensaje=(TextView)findViewById(R.id.tMensaje);
         t_Cm2=(TextView)findViewById(R.id.tAcm2);
 
-        t_Mensaje.setVisibility(View.GONE);
-        t_Cm2.setVisibility(View.GONE);
-        t_area.setVisibility(View.GONE);
 
-        t_Mensaje.setVisibility(View.INVISIBLE);
-        t_Cm2.setVisibility(View.INVISIBLE);
-        t_area.setVisibility(View.INVISIBLE);
 
 
         b_Area=(Button)findViewById(R.id.bArea);
@@ -139,7 +136,6 @@ public class punto4 extends ActionBarActivity {
         if (flag_cuadrado==1)
         {
             flag_cuadrado=0;
-            Toast.makeText(this, getResources().getString(R.string.cuadrado), Toast.LENGTH_LONG).show();
             String lado= e_Lado.getText().toString();
 
             if (TextUtils.isEmpty(lado)){
@@ -151,17 +147,17 @@ public class punto4 extends ActionBarActivity {
 
                 float lado1 = Float.parseFloat(lado);
                 float area = (float) (lado1 * lado1);
-                String cuadrado = String.valueOf(area);
-                t_area.setText(cuadrado);
-                t_Mensaje.setVisibility(View.VISIBLE);
-                t_Cm2.setVisibility(View.VISIBLE);
-                t_area.setVisibility(View.VISIBLE);
+
+                t_Mensaje.setText(getResources().getString(R.string.res));
+                t_Cm2.setText("  cm²");
+                t_area.setText(df.format(area));
+
+
 
             }
 
         }
         else if  (flag_rect==1){
-            Toast.makeText(this, getResources().getString(R.string.rectangulo), Toast.LENGTH_LONG).show();
             flag_rect=0;
 
             String altura= e_Altura.getText().toString();
@@ -177,18 +173,17 @@ public class punto4 extends ActionBarActivity {
                 float base1 = Float.parseFloat(base);
 
                 float area = (float) (altura1 * base1);
-                String rect1 = String.valueOf(area);
-                t_area.setText(rect1);
-                t_Mensaje.setVisibility(View.VISIBLE);
-                t_Cm2.setVisibility(View.VISIBLE);
-                t_area.setVisibility(View.VISIBLE);
+
+                t_Mensaje.setText(getResources().getString(R.string.res));
+                t_Cm2.setText("  cm²");
+                t_area.setText(df.format(area));
+
 
 
             }
 
         }
         else if (flag_tria==1){
-            Toast.makeText(this,getResources().getString(R.string.triangulo), Toast.LENGTH_LONG).show();
             flag_tria=0;
 
             String altura= e_Altura.getText().toString();
@@ -202,18 +197,17 @@ public class punto4 extends ActionBarActivity {
                 float base1 = Float.parseFloat(base);
 
                 float area = (float) (altura1 * base1 * 0.5);
-                String tria1 = String.valueOf(area);
-                t_area.setText(tria1);
-                t_Mensaje.setVisibility(View.VISIBLE);
-                t_Cm2.setVisibility(View.VISIBLE);
-                t_area.setVisibility(View.VISIBLE);
+
+                t_Mensaje.setText(getResources().getString(R.string.res));
+                t_Cm2.setText("  cm²");
+                t_area.setText(df.format(area));
+
 
             }
 
         }
 
         else if (flag_cir==1){
-            Toast.makeText(this, getResources().getString(R.string.circulo), Toast.LENGTH_LONG).show();
             flag_cir=0;
 
             String radio= e_Radio.getText().toString();
@@ -227,10 +221,11 @@ public class punto4 extends ActionBarActivity {
 
                 float area = (float) (radio1 * radio1 * Math.PI);
                 String cir1 = String.valueOf(area);
-                t_area.setText(cir1);
-                t_Mensaje.setVisibility(View.VISIBLE);
-                t_Cm2.setVisibility(View.VISIBLE);
-                t_area.setVisibility(View.VISIBLE);
+
+                t_Mensaje.setText(getResources().getString(R.string.res));
+                t_Cm2.setText("  cm²");
+                t_area.setText(df.format(area));
+
 
             }
 
@@ -245,9 +240,10 @@ public class punto4 extends ActionBarActivity {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
 
-                t_Mensaje.setVisibility(View.INVISIBLE);
-                t_Cm2.setVisibility(View.INVISIBLE);
-                t_area.setVisibility(View.INVISIBLE);
+                t_Mensaje.setText("");
+                t_Cm2.setText("");
+                t_area.setText("");
+
 
             }
         });
@@ -264,10 +260,10 @@ public class punto4 extends ActionBarActivity {
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
+                t_Mensaje.setText("");
+                t_Cm2.setText("");
+                t_area.setText("");
 
-                t_Mensaje.setVisibility(View.INVISIBLE);
-                t_Cm2.setVisibility(View.INVISIBLE);
-                t_area.setVisibility(View.INVISIBLE);
 
             }
         });
@@ -285,9 +281,9 @@ public class punto4 extends ActionBarActivity {
             public void onClick(DialogInterface dialog, int which) {
 // here you can add functions
 
-                t_Mensaje.setVisibility(View.INVISIBLE);
-                t_Cm2.setVisibility(View.INVISIBLE);
-                t_area.setVisibility(View.INVISIBLE);
+                t_Mensaje.setText("");
+                t_Cm2.setText("");
+                t_area.setText("");
 
             }
         });
@@ -308,10 +304,31 @@ public class punto4 extends ActionBarActivity {
         e_Altura.setText("");
         e_Base.setText("");
         e_Lado.setText("");
+        t_Mensaje.setText("");
+        t_Cm2.setText("");
+        t_area.setText("");
 
-        t_Mensaje.setVisibility(View.INVISIBLE);
-        t_Cm2.setVisibility(View.INVISIBLE);
-        t_area.setVisibility(View.INVISIBLE);
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("YourTextViewTextIdentifier", t_Mensaje.getText().toString());
+        outState.putString("area", t_area.getText().toString());
+        outState.putString("cm2", t_Cm2.getText().toString());
+
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        t_Mensaje.setText(savedInstanceState.getString("YourTextViewTextIdentifier"));
+        t_area.setText(savedInstanceState.getString("area"));
+        t_Cm2.setText(savedInstanceState.getString("cm2"));
+
 
     }
 

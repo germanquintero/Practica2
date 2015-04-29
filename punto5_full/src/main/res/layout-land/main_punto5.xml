@@ -11,30 +11,45 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nombre"
-            android:textSize="13dp"
-            android:textColor="#C95E3A"
-            android:layout_weight="0.5"/>
+            android:orientation="horizontal"
+            >
 
-        <EditText
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nombre"
+                        android:textSize="15dp"
+                        android:textColor="#C95E3A"
+                        android:layout_weight="0.5"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hnombre"
+                        android:textSize="15dp"
+                        android:inputType="textPersonName"
+                        android:layout_weight="0.65"
+                        android:id="@+id/eNombre"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/hnombre"
-            android:textSize="13dp"
-            android:inputType="textPersonName"
-            android:layout_weight="0.65"
-            android:id="@+id/eNombre"/>
+            android:orientation="horizontal"
+            android:layout_marginLeft="80dp"
+            >
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/correo"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_weight="0.4"/>
 
@@ -42,12 +57,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/hcorreo"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:inputType="textEmailAddress"
             android:layout_weight="1"
             android:id="@+id/eCorreo"/>
     </LinearLayout>
-    
+    </LinearLayout>
     
     
     <LinearLayout
@@ -55,77 +70,91 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/telefono"
-            android:textSize="13dp"
-            android:textColor="#C95E3A"
-            android:layout_weight="0.95"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/htelefono"
-            android:textSize="13dp"
-            android:inputType="phone"
-            android:layout_weight="1"
-            android:id="@+id/eTel"/>
+            android:orientation="horizontal">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sexo"
-            android:textSize="13dp"
-            android:textColor="#C95E3A"
-            android:layout_weight="0.5"/>
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/telefono"
+                            android:textSize="15dp"
+                            android:textColor="#C95E3A"
+                            android:layout_weight="0.42"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/htelefono"
+                            android:textSize="15dp"
+                            android:inputType="phone"
+                            android:layout_weight="0.4"
+                            android:id="@+id/eTel"/>
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginRight="30dip"
-            >
-            <RadioButton android:id="@+id/rFemenino"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/feme"
+            android:layout_marginLeft="70dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sexo"
+                            android:textSize="15dp"
+                            android:textColor="#C95E3A"
+                            android:layout_weight="0.5"/>
+
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="20dip"
+                            >
+                            <RadioButton android:id="@+id/rFemenino"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/feme"
 
 
-                />
-            <RadioButton android:id="@+id/rMasculino"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/mascu"
+                                />
+                            <RadioButton android:id="@+id/rMasculino"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mascu"
 
-                />
-        </RadioGroup>
+                                />
+                              </RadioGroup>
+                        </LinearLayout>
+
+
     </LinearLayout>
 
 
 
-
-
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pais"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:textColor="#C95E3A"
-            android:layout_weight="5"/>
+            android:layout_weight="0.5"/>
 
         <Spinner
             android:id="@+id/SPais"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
-            android:layout_weight="1"
+            android:textSize="15dp"
             android:entries="@array/country_arrays"
             android:prompt="@string/country_prompt" />
     </LinearLayout>
@@ -143,7 +172,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hobbies"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:textColor="#C95E3A"
             android:layout_marginRight="60dp"
              />
@@ -191,11 +220,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/fecha"
-        android:textSize="10dp"
+        android:textSize="15dp"
         android:textColor="#C95E3A"
         android:layout_weight="1.8"/>
 
-        <DatePicker
+      <DatePicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/dpFechanaci"
@@ -204,13 +233,12 @@
             />
 
 
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/aceptar"
         android:layout_gravity="center"
-        android:textSize="13dp"
+        android:textSize="15dp"
         android:id="@+id/boton"
         />
 
@@ -231,7 +259,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/nombre"
-                    android:textSize="13dp"
+                    android:textSize="15dp"
                     android:textColor="#ff060bc9"
                     />
 
@@ -240,7 +268,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:textSize="13dp"
+                    android:textSize="15dp"
                     android:id="@+id/tNombre"/>
     </LinearLayout>
 
@@ -255,14 +283,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/correo"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:textColor="#ff060bc9"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tCorreo"/>
 
     </LinearLayout>
@@ -278,7 +306,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:text="@string/telefono"
             android:textColor="#ff060bc9"
             />
@@ -286,7 +314,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tTel"/>
 
     </LinearLayout>
@@ -301,7 +329,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:text="@string/sexo"
             android:textColor="#ff060bc9"
             />
@@ -309,7 +337,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tSexo"/>
 
     </LinearLayout>
@@ -323,7 +351,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:text="@string/pais"
             android:textColor="#ff060bc9"
             />
@@ -331,7 +359,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tPais"/>
 
     </LinearLayout>
@@ -346,7 +374,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:text="@string/hobbies"
             android:textColor="#ff060bc9"
 
@@ -355,25 +383,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tHobbie1"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tHobbie2"
             android:layout_marginLeft="5dip"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tHobbie3"
             android:layout_marginLeft="5dip"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tHobbie4"
             android:layout_marginLeft="5dip"/>
     </LinearLayout>
@@ -388,7 +416,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:text="@string/fecha"
             android:textColor="#ff060bc9"
             />
@@ -397,7 +425,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:id="@+id/tNaci"/>
 
             </LinearLayout>

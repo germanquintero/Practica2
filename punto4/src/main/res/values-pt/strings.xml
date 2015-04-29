@@ -1,2 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Punto4</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="titulo">Figuras Área Calculadora</string>
+    <string name="input">Digite Todos os detalhes e escolha Figura</string>
+    <string name="base">Base</string>
+    <string name="lado">Lado</string>
+    <string name="altura">Altura</string>
+    <string name="radio">Radio</string>
+    <string name="ibase">Base?</string>
+    <string name="ilado">Lado?</string>
+    <string name="ialtura">Altura?</string>
+    <string name="iradio">Radio?</string>
+    <string name="cuadrado">Quadrado</string>
+    <string name="triangulo">Triângulo</string>
+    <string name="rectangulo">Retângulo</string>
+    <string name="circulo">Círculo</string>
+    <string name="calcular">Calcular a Area</string>
+    <string name="nuevo">Novo Cálculo</string>
+    <string name="res">A área é:</string>
+
+    //java
+    <string name="fatan">Dados Ausentes</string>
+    <string name="inputlado">Introudzca el lado del Cuadrado</string>
+    <string name="basaltura">Introudzca ao lado da Praça</string>
+    <string name="faltaradio">Por favor insira o Radio</string>
+
+
+
+    <string name="action_settings">Settings</string>
+</resources>

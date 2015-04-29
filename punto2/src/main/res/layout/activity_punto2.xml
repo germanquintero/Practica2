@@ -9,8 +9,7 @@
   >
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextViewStyle"
         android:text="@string/title"
         android:textSize="30dp"
         android:gravity="center_horizontal"
@@ -19,8 +18,7 @@
         />
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextViewStyle"
         android:text="@string/descri"
         android:textSize="15dp"
         android:layout_marginTop="30dp"
@@ -38,8 +36,7 @@
         >
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
             android:text="@string/ope1"
             android:textSize="20dp"
             android:textColor="#ffff0a16"
@@ -47,8 +44,7 @@
             android:textStyle="italic"
             />
         <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
             android:hint="@string/ope1"
             android:textSize="20dp"
             android:inputType="numberSigned|numberDecimal"
@@ -65,8 +61,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
             android:text="@string/ope2"
             android:textSize="20dp"
             android:textColor="#ffff0a16"
@@ -74,8 +69,7 @@
             android:textStyle="italic"
             />
         <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
             android:hint="@string/ope2"
             android:textSize="20dp"
             android:inputType="numberSigned|numberDecimal"
@@ -89,8 +83,7 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
             android:hint="@string/res"
             android:textSize="20dp"
             android:layout_weight="0.7"
@@ -141,14 +134,15 @@
 
     <!-- Para poner el tipo de numero-->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TextViewStyle"
         android:textSize="20dp"
         android:textColor="#ffff0a16"
         android:textStyle="italic"
         android:text="@string/tipo"
         android:id="@+id/tTipo"
         android:layout_gravity="center_horizontal"
+
+
         />
 
     <Button

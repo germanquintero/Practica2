@@ -21,7 +21,7 @@
         style="@style/textViewStyle"
         android:textSize="15dp"
         android:layout_gravity="center"
-        android:textColor="#ff30ff18"
+        android:textColor="#ff0726ff"
         android:text="@string/input"
 
         />
@@ -206,7 +206,6 @@
 
         style="@style/textViewStyle"
 
-        android:text="@string/res"
         android:id="@+id/tMensaje"
         android:textSize="30dp"
         android:textColor="#ff0fff13"
@@ -244,7 +243,6 @@
             android:textColor="#ff0a3aff"
             android:layout_weight="1"
             android:layout_gravity="center_horizontal"
-            android:text="  cm²"
             android:id="@+id/tAcm2"
             />
 

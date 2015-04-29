@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Punto5_full</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="nombre">Nome:</string>
+    <string name="correo">Email:</string>
+    <string name="telefono">Telepone:</string>
+    <string name="sexo">Sex:</string>
+    <string name="mascu">Male</string>
+    <string name="feme">Female</string>
+    <string name="pais">Country:</string>
+    <string name="hobbies">Hobbies:</string>
+    <string name="musica">music</string>
+    <string name="cine">Filmes</string>
+    <string name="jugar">Jogar</string>
+    <string name="nadar">Natação</string>
+    <string name="fecha">Data de Nascimento</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="hnombre">Digite nome</string>
+    <string name="hcorreo">Digite o e-mail</string>
+    <string name="htelefono">Entre telefone</string>
+
+
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+</resources>

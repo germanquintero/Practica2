@@ -2,7 +2,7 @@ package mainactivity.germanquintero.com.punto3;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,6 +14,8 @@ import android.view.View;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 
 public class Punto3 extends ActionBarActivity {
 
@@ -24,6 +26,8 @@ public class Punto3 extends ActionBarActivity {
 
     String notaquices, notaexp, notalab, profinal;
     float n_quiz = 0, n_exp = 0, n_lab = 0, n_profi = 0, definitiva = 0;
+    String def;
+    DecimalFormat df = new DecimalFormat("#.#");
 
 
     public Punto3() {
@@ -45,9 +49,6 @@ public class Punto3 extends ActionBarActivity {
              t_nota = (TextView) findViewById(R.id.tDef);
              t_estado = (TextView) findViewById(R.id.tEstado);
              t_mensaje = (TextView) findViewById(R.id.tMensaje);
-
-             t_mensaje.setVisibility(View.GONE);
-             t_mensaje.setVisibility(View.INVISIBLE);
 
              b_calcular = (Button) findViewById(R.id.bNota);
              b_calcular.setOnClickListener(new View.OnClickListener() {
@@ -82,9 +83,8 @@ public class Punto3 extends ActionBarActivity {
                             mensaje2();
                         } else {
                             definitiva = (float) (n_quiz * 0.15 + n_exp * 0.1 + n_lab * 0.4 + n_profi * 0.35);
-                            String def =String.valueOf(definitiva);
-                            t_mensaje.setVisibility(View.VISIBLE);
-                            t_nota.setText(def);
+                            t_mensaje.setText(getResources().getString(R.string.defi));
+                            t_nota.setText(df.format(definitiva));
                             estado();
                         }
 
@@ -143,7 +143,7 @@ public class Punto3 extends ActionBarActivity {
         e_Profinal.setText("");
         t_nota.setText("");
         t_estado.setText("");
-        t_mensaje.setVisibility(View.INVISIBLE);
+        t_mensaje.setText("");
 
 
     }
@@ -166,22 +166,6 @@ public class Punto3 extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent j =new Intent(this,ConfigurarNotas.class);
-            j.putExtra("pQuiz",15);
-            j.putExtra("pExp",10);
-            j.putExtra("pPra",40);
-            j.putExtra("pPro",35);
-            startActivity(j);
-
-
-            return true;
-        }
-
-        if (id == R.id.acercade) {
-            //lo que euiero que ejecute
-
-            Intent i =new Intent(this,About.class);
-            startActivity(i);
             return true;
         }
 
@@ -189,12 +173,28 @@ public class Punto3 extends ActionBarActivity {
     }
 
 
-public void acercade(View view){
 
-    Intent i =new Intent(this,About.class);
-    startActivity(i);
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("YourTextViewTextIdentifier", t_nota.getText().toString());
+        outState.putString("estado", t_estado.getText().toString());
+        outState.putString("mensaje", t_mensaje.getText().toString());
 
-}
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        t_nota.setText(savedInstanceState.getString("YourTextViewTextIdentifier"));
+        t_estado.setText(savedInstanceState.getString("estado"));
+        t_mensaje.setText(savedInstanceState.getString("mensaje"));
+
+
+    }
+
     @Override
     protected void onStart() {
         Toast.makeText(this,"On Start", Toast.LENGTH_LONG).show();

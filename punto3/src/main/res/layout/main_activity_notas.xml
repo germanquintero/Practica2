@@ -176,10 +176,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/defi"
         android:id="@+id/tMensaje"
         android:textSize="40dp"
-        android:textColor="#ff0fff13"
+        android:textColor="#ffff3d0a"
         android:layout_weight="0.5"
         android:textStyle="italic"
         android:layout_gravity="center_horizontal"
@@ -207,14 +206,6 @@
         android:id="@+id/tEstado"
         android:layout_gravity="center_horizontal"
         />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/acerca"
-        android:id="@+id/bAcerca"
-        android:layout_gravity="left"
-        android:onClick="acercade" />
 
 
 

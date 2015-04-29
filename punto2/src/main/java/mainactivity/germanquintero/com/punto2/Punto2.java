@@ -18,6 +18,8 @@ import android.app.Activity;
 import android.widget.Toast;
 import android.app.AlertDialog;
 
+import java.text.DecimalFormat;
+
 
 public class Punto2 extends ActionBarActivity {
 
@@ -36,6 +38,7 @@ public class Punto2 extends ActionBarActivity {
 
     private float ope1=0, ope2=0, res=0;
     String operando1, operando2;
+    DecimalFormat df = new DecimalFormat("#.#######");
 
 
     @Override
@@ -127,6 +130,7 @@ public class Punto2 extends ActionBarActivity {
         eOpe11.setText("");
         eOpe22.setText("");
         eRes.setText("");
+        tTipo.setText("");
 
 
     }
@@ -143,8 +147,7 @@ public class Punto2 extends ActionBarActivity {
             ope1 = Float.parseFloat(operando1);
             ope2 = Float.parseFloat(operando2);
             res = ope1 + ope2;
-            String suma = String.valueOf(res);
-            eRes.setText(suma);
+            eRes.setText(df.format(res));
             tipo();
         }
 
@@ -162,8 +165,8 @@ public class Punto2 extends ActionBarActivity {
             ope1 = Float.parseFloat(operando1);
             ope2 = Float.parseFloat(operando2);
             res = ope1 - ope2;
-            String resta = String.valueOf(res);
-            eRes.setText(resta);
+            eRes.setText(df.format(res));
+
             tipo();
         }
     }
@@ -181,8 +184,8 @@ public class Punto2 extends ActionBarActivity {
             ope1 = Float.parseFloat(operando1);
             ope2 = Float.parseFloat(operando2);
             res = ope1 * ope2;
-            String multi = String.valueOf(res);
-            eRes.setText(multi);
+            eRes.setText(df.format(res));
+
             tipo();
         }
 
@@ -201,8 +204,8 @@ public class Punto2 extends ActionBarActivity {
             ope1 = Float.parseFloat(operando1);
             ope2 = Float.parseFloat(operando2);
             res = ope1 / ope2;
-            String divi = String.valueOf(res);
-            eRes.setText(divi);
+            eRes.setText(df.format(res));
+
             tipo();
         }
 
@@ -225,6 +228,26 @@ public class Punto2 extends ActionBarActivity {
         }
     }
 
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("YourTextViewTextIdentifier", eRes.getText().toString());
+        outState.putString("tipo", tTipo.getText().toString());
+
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        eRes.setText(savedInstanceState.getString("YourTextViewTextIdentifier"));
+        tTipo.setText(savedInstanceState.getString("tipo"));
+
+
+    }
 
 
     @Override

@@ -3,28 +3,28 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="ope1">Operando1</string>
-    <string name="ope2">Operando2</string>
-    <string name="res">Resultado</string>
-    <string name="tipo">Positivo o Negativo</string>
-    <string name="reset">Nuevo</string>
+    <string name="ope2">Operand2</string>
+    <string name="res">Result</string>
+    <string name="tipo">Type</string>
+    <string name="reset">Nuew</string>
 
     //los de java
-    <string name="faltan">Faltan Datos</string>
-    <string name="llenar">Es Necesario Llenar Todos Los Campos</string>
-    <string name="cero">El resultado es Cero</string>
-    <string name="inf">Indeterminado</string>
+    <string name="faltan">Missing Data</string>
+    <string name="llenar">Please, input all data</string>
+    <string name="cero">The result is ZeroEl resultado es Cero</string>
+    <string name="inf">NoN</string>
 
 
 
 
-    <string name="pos">El resultado es Positivo</string>
-    <string name="neg">El resultado es Negativo</string>
+    <string name="pos">The result is Positive</string>
+    <string name="neg">The result is Negative</string>
 
-    <string name="title">Calculadora</string>
-    <string name="descri">Ingrese Los Operandos y Elija La Operación</string>
-    <string name="suma">Sumar</string>
-    <string name="resta">Restar</string>
-    <string name="multi">Multiplicar</string>
-    <string name="divi">Dividir</string>
+    <string name="title">Calculator</string>
+    <string name="descri">Enter The operands and choose the operation</string>
+    <string name="suma">Add</string>
+    <string name="resta">Rest</string>
+    <string name="multi">Multiplicate</string>
+    <string name="divi">Divide</string>
     <string name="action_settings">Settings</string>
 </resources>

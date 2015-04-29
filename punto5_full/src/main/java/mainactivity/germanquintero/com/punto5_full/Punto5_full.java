@@ -19,6 +19,7 @@ public class Punto5_full extends ActionBarActivity {
 
     int flag_mas=0, flag_fem=0;
 
+    TextView tSexo,tPai,tfecha, tH1, tH2, tH3, tH4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,15 +34,15 @@ public class Punto5_full extends ActionBarActivity {
         final TextView tName = (TextView) findViewById(R.id.tNombre);
         final TextView tMail = (TextView) findViewById(R.id.tCorreo);
         final TextView tTel = (TextView) findViewById(R.id.tTel);
-        final TextView tSexo = (TextView) findViewById(R.id.tSexo);
-        final TextView tPai = (TextView) findViewById(R.id.tPais);
+        tSexo = (TextView) findViewById(R.id.tSexo);
+        tPai = (TextView) findViewById(R.id.tPais);
 
-        final TextView tH1 = (TextView) findViewById(R.id.tHobbie1);
-        final TextView tH2 = (TextView) findViewById(R.id.tHobbie2);
-        final TextView tH3 = (TextView) findViewById(R.id.tHobbie3);
-        final TextView tH4 = (TextView) findViewById(R.id.tHobbie4);
+        tH1 = (TextView) findViewById(R.id.tHobbie1);
+        tH2 = (TextView) findViewById(R.id.tHobbie2);
+        tH3 = (TextView) findViewById(R.id.tHobbie3);
+        tH4 = (TextView) findViewById(R.id.tHobbie4);
 
-        final TextView tfecha = (TextView) findViewById(R.id.tNaci);
+        tfecha = (TextView) findViewById(R.id.tNaci);
         final DatePicker dpnaci= (DatePicker)findViewById(R.id.dpFechanaci);
 
         final RadioButton rmas=(RadioButton)findViewById(R.id.rMasculino);
@@ -139,6 +140,42 @@ public class Punto5_full extends ActionBarActivity {
 
 
         }
+    }
+
+
+
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("sexo", tSexo.getText().toString());
+        outState.putString("pais", tPai.getText().toString());
+        outState.putString("fecha", tfecha.getText().toString());
+        outState.putString("th1", tH1.getText().toString());
+        outState.putString("th2", tH2.getText().toString());
+        outState.putString("th3", tH3.getText().toString());
+        outState.putString("th4", tH4.getText().toString());
+
+
+
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        tSexo.setText(savedInstanceState.getString("sexo"));
+        tPai.setText(savedInstanceState.getString("pais"));
+        tfecha.setText(savedInstanceState.getString("pais"));
+        tH1.setText(savedInstanceState.getString("th1"));
+        tH2.setText(savedInstanceState.getString("th2"));
+        tH3.setText(savedInstanceState.getString("th3"));
+        tH4.setText(savedInstanceState.getString("th4"));
+
+
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
